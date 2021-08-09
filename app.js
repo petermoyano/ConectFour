@@ -3,6 +3,9 @@ let currentColor = "blue";
 const firstRow = document.querySelector(".firstRow");
 const h1 = document.querySelector("h1");
 h1.style.color = `${currentColor}`;
+firstRow.style.backgroundColor = `${currentColor}`;
+
+
 let table = [
     { "nextSpot": 7.1, 1.1: "free", 1.2: "free", 1.3: "free", 1.4: "free", 1.5: "free", 1.6: "free", 1.7: "free" },
     { "nextSpot": 7.2, 2.1: "free", 2.2: "free", 2.3: "free", 2.4: "free", 2.5: "free", 2.6: "free", 2.7: "free" },
@@ -42,6 +45,8 @@ firstRow.addEventListener("click", function (event) {
     table[column - 1]["nextSpot"]--;
     changeCurrentColor(currentColor);
     h1.style.color = `${currentColor}`;
+    firstRow.style.backgroundColor = `${currentColor}`;
+
 
 });
 

@@ -1,22 +1,28 @@
 tr td{
-    width: 50px;
-    height: 50px;
-    border: solid 2px black;
+    width: 100px;
+    height: 100px;
+    border: solid 2px grey;
+    transition: .5s;
+    border-radius: 50px;
 }
-td[id^= "1."]{
-    background-color: lightseagreen;
-}
+/* td[id^= "1."]{
+    transition: 2s;
+} */
 .table{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    background-color: grey
+    background-color: black;
 }
 h1{
     text-align: center;
-    font-size: 3rem;
-    transition: 1s;
+    font-size: 2rem;
+    transition: .5s;
+    font-family: monospace;
 }
 body{
     background-color: black;
+}
+.firstRow{
+    transition: .5s;
 }
